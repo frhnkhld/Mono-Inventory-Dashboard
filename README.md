@@ -1,3 +1,8 @@
+Tentu, ini adalah versi **`README.md`** dalam bahasa Inggris yang profesional. Ini dirancang khusus untuk **portofolio**, menonjolkan fakta bahwa kamu membangun ini dengan "Vanilla JS" (tanpa framework), yang merupakan nilai tambah besar di mata rekruter.
+
+Silakan copy-paste kode di bawah ini ke file `README.md` kamu.
+
+````markdown:readme.md
 # Mono Stock - Minimalist Inventory Dashboard
 
 ![Project Status](https://img.shields.io/badge/status-active-success)
@@ -62,15 +67,18 @@ Since this project uses no build tools or bundlers (like Webpack or Vite), runni
 ├── settings.html     # User Settings View
 ├── style.css         # Global Stylesheet (Variables, Layout, Components)
 └── script.js         # Application Logic (Data handling, Chart rendering, UI interaction)
+````
 
-🔮 Future Improvements
-[ ] Dark Mode toggle.
+## 🔮 Future Improvements
 
-[ ] Backend integration (Node.js or Firebase) for real-time data persistence.
+  * [ ] Dark Mode toggle.
+  * [ ] Backend integration (Node.js or Firebase) for real-time data persistence.
+  * [ ] Export data to CSV/PDF functionality.
 
-[ ] Export data to CSV/PDF functionality.
+## 📄 License
 
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
+
+-----
 
 <p align="center"> Built with passion by <strong>Farhan Kh</strong> </p>
