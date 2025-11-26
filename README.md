@@ -7,12 +7,6 @@
 
 **Mono Stock** is a lightweight, aesthetically pleasing inventory management dashboard built entirely with core web technologies. It features a strict monochrome design system and demonstrates advanced DOM manipulation and data visualization without the use of any external libraries or frameworks.
 
----
-
-## 📸 Preview
-
-<img src="https://frhnkhld.github.io/Mono-Inventory-Dashboard/" alt="Dashboard Preview" width="100%">
-
 ## ✨ Key Features
 
 * **Strict Monochrome UI:** A clean, distraction-free design using only black, white, and shades of gray.
@@ -74,7 +68,5 @@ Since this project uses no build tools or bundlers (like Webpack or Vite), runni
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
------
 
 <p align="center"> Built with passion by <strong>Farhan Kh</strong> </p>
