@@ -1,8 +1,4 @@
-Tentu, ini adalah versi **`README.md`** dalam bahasa Inggris yang profesional. Ini dirancang khusus untuk **portofolio**, menonjolkan fakta bahwa kamu membangun ini dengan "Vanilla JS" (tanpa framework), yang merupakan nilai tambah besar di mata rekruter.
 
-Silakan copy-paste kode di bawah ini ke file `README.md` kamu.
-
-````markdown:readme.md
 # Mono Stock - Minimalist Inventory Dashboard
 
 ![Project Status](https://img.shields.io/badge/status-active-success)
