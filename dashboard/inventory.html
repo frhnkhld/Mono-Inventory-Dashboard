@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Mono Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="sidebar">
+        <div class="logo-area">
+            <span class="logo-text">MONO STOCK</span>
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Dashboard</span></a></li>
+                <li><a href="inventory.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>■</i> <span>Inventory</span></a></li>
+                <li><a href="reports.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Reports</span></a></li>
+                <li><a href="settings.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Settings</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Manajemen Inventaris</h1>
+            <div class="date-display" id="currentDate"></div>
+        </header>
+
+        <div class="section-box">
+            <div class="section-header">
+                <h2>Database Barang</h2>
+                <div style="display:flex; gap:10px;">
+                    <button style="padding:8px 16px; background:black; color:white; border:none; cursor:pointer;">+ Tambah Barang</button>
+                    <button style="padding:8px 16px; background:white; border:1px solid #ccc; cursor:pointer;">Ekspor CSV</button>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="inventoryTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('id')">ID</th>
+                            <th onclick="sortTable('nama')">Nama Barang</th>
+                            <th onclick="sortTable('kategori')">Kategori</th>
+                            <th onclick="sortTable('harga')">Harga (IDR)</th>
+                            <th onclick="sortTable('stok')">Stok</th>
+                            <th onclick="sortTable('pembelian_bulanan')">Penjualan Bulan Ini</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Diisi oleh JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

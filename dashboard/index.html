@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochrome Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside id="sidebar">
+        <div class="logo-area">
+            <span class="logo-text">MONO STOCK</span>
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Dashboard</span></a></li>
+                <li><a href="inventory.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>■</i> <span>Inventory</span></a></li>
+                <li><a href="reports.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Reports</span></a></li>
+                <li><a href="settings.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Settings</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Dashboard Overview</h1>
+            <div class="date-display" id="currentDate">Senin, 1 Jan 2024</div>
+        </header>
+
+        <div class="kpi-grid">
+            <div class="card">
+                <span class="card-title">Total Barang</span>
+                <span class="card-value" id="totalItems">0</span>
+            </div>
+            <div class="card">
+                <span class="card-title">Total Stok Fisik</span>
+                <span class="card-value" id="totalStock">0</span>
+            </div>
+            <div class="card">
+                <span class="card-title">Valuasi Aset</span>
+                <span class="card-value" id="totalValue">Rp 0</span>
+            </div>
+            <div class="card">
+                <span class="card-title">Produk Terlaris</span>
+                <span class="card-value" style="font-size: 1.2rem; margin-top: auto;" id="bestSeller">-</span>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="section-box">
+                <div class="section-header">
+                    <h2>Tren Penjualan (7 Hari)</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <h2>Stok Menipis (< 10)</h2>
+                </div>
+                <div id="lowStockList">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box" style="flex: 1;">
+            <div class="section-header">
+                <h2>Inventaris Lengkap</h2>
+                <div style="font-size: 0.8rem; color: #888;">Klik header untuk mengurutkan</div>
+            </div>
+            <div class="table-container">
+                <table id="inventoryTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('id')">ID</th>
+                            <th onclick="sortTable('nama')">Nama Barang</th>
+                            <th onclick="sortTable('kategori')">Kategori</th>
+                            <th onclick="sortTable('harga')">Harga (IDR)</th>
+                            <th onclick="sortTable('stok')">Stok</th>
+                            <th onclick="sortTable('pembelian_bulanan')">Penjualan Bulan Ini</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

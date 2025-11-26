@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Mono Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="sidebar">
+        <div class="logo-area">
+            <span class="logo-text">MONO STOCK</span>
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Dashboard</span></a></li>
+                <li><a href="inventory.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Inventory</span></a></li>
+                <li><a href="reports.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>■</i> <span>Reports</span></a></li>
+                <li><a href="settings.html" style="color:inherit; text-decoration:none; display:flex; gap:12px; width:100%;"><i>□</i> <span>Settings</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <header>
+            <h1>Laporan Bulanan</h1>
+            <div class="date-display" id="currentDate"></div>
+        </header>
+
+        <div class="content-grid">
+            <div class="section-box">
+                <div class="section-header">
+                    <h2>Statistik Kategori</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="reportChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="section-box">
+                <div class="section-header">
+                    <h2>Ringkasan</h2>
+                </div>
+                <div class="list-item">
+                    <span class="item-name">Total Pendapatan (Est.)</span>
+                    <span class="status-badge">Rp 15.400.000</span>
+                </div>
+                <div class="list-item">
+                    <span class="item-name">Barang Keluar</span>
+                    <span class="status-badge">450 Unit</span>
+                </div>
+                <div class="list-item">
+                    <span class="item-name">Barang Masuk</span>
+                    <span class="status-badge">320 Unit</span>
+                </div>
+                <div style="margin-top:20px; font-size:0.9rem; color:#888;">
+                    <p>Laporan ini digenerate secara otomatis berdasarkan pergerakan stok harian.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
