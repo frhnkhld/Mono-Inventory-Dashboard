@@ -11,7 +11,7 @@
 
 ## 📸 Preview
 
-<img src="https://via.placeholder.com/800x400/000000/FFFFFF?text=Mono+Stock+Dashboard+Preview" alt="Dashboard Preview" width="100%">
+<img src="https://frhnkhld.github.io/Mono-Inventory-Dashboard/" alt="Dashboard Preview" width="100%">
 
 ## ✨ Key Features
 
